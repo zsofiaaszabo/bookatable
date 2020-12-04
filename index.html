@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="first" class="first">
+      <div class="title">
+        <h1>ZSAD Pizzéria</h1>
+      </div>
+    </section>
+    <section id="second" class="second">
+      <div class="intro">
+        <h2>Bemutatkozás</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+          fugiat excepturi fuga reprehenderit, deleniti maiores possimus sint
+          recusandae atque hic nulla perferendis! Quam minus repellendus vel
+          reiciendis voluptate molestiae quod?Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Impedit, fugiat excepturi fuga
+          reprehenderit, deleniti maiores possimus sint recusandae atque hic
+          nulla perferendis! Quam minus repellendus vel reiciendis voluptate
+          molestiae quod?Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Impedit, fugiat excepturi fuga reprehenderit, deleniti maiores
+          possimus sint recusandae atque hic nulla perferendis! Quam minus
+          repellendus vel reiciendis voluptate molestiae quod?Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Impedit, fugiat excepturi fuga
+          reprehenderit, deleniti maiores possimus sint recusandae atque hic
+          nulla perferendis! Quam minus repellendus vel reiciendis voluptate
+          molestiae quod?
+        </p>
+      </div>
+    </section>
+    <section id="third" class="third">
+      <div class="parent">
+        <div><h3 class="underline">Ételek</h3></div>
+        <div><h3 class="underline price">Ár</h3></div>
+        <div><h3>Capriciosa</h3></div>
+        <div><h3>2300.-</h3></div>
+        <div><h3>Prosciutto de parma</h3></div>
+        <div><h3>2500.-</h3></div>
+        <div><h3>Prosciutto</h3></div>
+        <div><h3>1700.-</h3></div>
+        <div><h3>Fungi</h3></div>
+        <div><h3>1500.-</h3></div>
+        <div><h3>Margherita</h3></div>
+        <div><h3>1300.-</h3></div>
+      </div>
+      <button class="open-button" onclick="openForm()">Foglalj most</button>
+
+      <div class="form-popup" id="myForm">
+        <form name="myform" method="post" action="none" class="form-container">
+          <h1>Foglalás</h1>
+
+          <label for="name"><b>Név</b></label>
+          <input type="text" placeholder="Név" id="name" name="name" required />
+
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="seets">Vendégek száma:</label>
+          <select name="seets" id="seets" required>
+            <option value="">Válasszon...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+
+          <label for="date"><b>Dátum</b></label>
+          <input type="date" id="myDate" name="myDate" required />
+
+          <label for="appt"><b>Időpont</b></label>
+          <input type="time" id="appt" name="appt" required />
+
+          <button type="button" id="reservation" class="btn">Foglalás</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Mégsem
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

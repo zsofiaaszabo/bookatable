@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.first {
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.first {
+  background-image: url("pp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first .title {
+  width: 300px;
+  height: 150px;
+  background-color: slategray;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+.first h1 {
+  color: yellow;
+  text-align: center;
+  font-size: 3em;
+}
+
+#second {
+  background-color: white;
+}
+#second .intro {
+  width: 100%;
+  padding: 40px;
+}
+#second h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding-bottom: 30px;
+}
+#second p {
+  font-size: 1.5em;
+  line-height: 1.9;
+}
+#second p:first-letter {
+  font-size: 40px;
+}
+
+.third {
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* The popup form - hidden by default */
+  /* Add styles to the form container */
+  /* Full-width input fields */
+  /* When the inputs get focus, do something */
+  /* Set a style for the submit/login button */
+  /* Add a red background color to the cancel button */
+  /* Add some hover effects to buttons */
+}
+.third .parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.third .parent div {
+  width: 200px;
+  height: 100px;
+}
+.third .parent div h3 {
+  text-align: center;
+  font-size: 1.9em;
+}
+.third .parent div .underline {
+  border-bottom: solid 3px black;
+  padding-top: 40px;
+}
+.third .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.third .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  border-radius: 25px;
+}
+.third .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+.third .form-container h1 {
+  text-align: center;
+}
+.third .form-container input[type=text],
+.third .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.third .form-container input[type=text]:focus,
+.third .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius: 25px;
+}
+.third .form-container .btn {
+  background-color: yellow;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+.third .form-container .cancel {
+  background-color: slategray;
+  border-radius: 25px;
+  color: white;
+}
+.third .form-container .btn:hover,
+.third .open-button:hover {
+  opacity: 1;
+}
+.third .form-container input[type=date],
+.third .form-container input[type=time] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.third #seets {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.third .btn {
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .third .parent {
+    display: block;
+  }
+
+  .price {
+    display: none;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
